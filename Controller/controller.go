@@ -21,6 +21,8 @@ func getHash(pwd []byte) string {
 	}
 	return string(hash)
 }
+
+//user login
 func Userlogin(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
 
@@ -53,7 +55,7 @@ func Userlogin(response http.ResponseWriter, request *http.Request) {
 	response.Write([]byte(`{"token":"` + jwtToken + `"}`))
 
 }
-
+ //new user signup
 func UserSignup(response http.ResponseWriter, request *http.Request) {
 	response.Header().Set("Content-Type", "application/json")
 	var user model.User
