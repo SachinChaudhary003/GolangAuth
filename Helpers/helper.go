@@ -10,7 +10,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const mongoconn = "mongodb+srv://Godb:Golang123@cluster0.0r5zajl.mongodb.net/"
+const mongoconn = "mongodb+srv://<mongodatabasename>:<password>@cluster0.0r5zajl.mongodb.net/"
 const dbName = "Auhtentication"
 const colName = "auth"
 
